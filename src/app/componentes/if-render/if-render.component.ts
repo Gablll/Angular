@@ -1,0 +1,19 @@
+import { Component } from '@angular/core';
+
+@Component({
+  selector: 'app-if-render',
+  templateUrl: './if-render.component.html',
+  styleUrls: ['./if-render.component.css']
+})
+export class IfRenderComponent {
+ mostrar = true;
+ nome: string = 'Joao Paulo';
+ /*
+ testeComElse: boolean = false;
+ constructor() { }
+
+ ngOnInit() void{
+  
+ }
+ */
+}

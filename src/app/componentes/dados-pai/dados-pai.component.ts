@@ -5,7 +5,7 @@ import { Component, OnInit, Input } from '@angular/core';
   templateUrl: './dados-pai.component.html',
   styleUrls: ['./dados-pai.component.css']
 })
-export class DadosPaiComponent implements OnInit {
+export class DadosPaiComponent {
   @Input() nome: string = '';
   @Input() dadosUsu!: {
     email: string,
