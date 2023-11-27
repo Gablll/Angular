@@ -8,16 +8,20 @@ import { EventosComponent } from './componentes/eventos/eventos.component';
 import { EmitterComponent } from './componentes/emitter/emitter.component';
 import { PipesComponent } from './componentes/pipes/pipes.component';
 import { TwoWayBidingComponent } from './componentes/two-way-biding/two-way-biding.component';
+import { DetalhesItemComponent } from './componentes/detalhes-item/detalhes-item.component';
+import { DataFormComponent } from './componentes/data-form/data-form.component';
 
 const routes: Routes = [
   {path: '', component: PrimeiroComponenteComponent},
   {path: 'list', component: ListRenderComponent},
+  {path: 'list/:id', component: DetalhesItemComponent},
   {path: 'diretivas', component: DiretivasComponent},
   {path: 'if-render', component: IfRenderComponent},
   {path: 'eventos', component: EventosComponent},
   {path: 'emitter', component: EmitterComponent},
   {path: 'pipes', component: PipesComponent},
-  {path: 'two-way-biding', component: TwoWayBidingComponent}
+  {path: 'two-way-biding', component: TwoWayBidingComponent},
+  {path: 'form', component: DataFormComponent}
 ];
 
 @NgModule({

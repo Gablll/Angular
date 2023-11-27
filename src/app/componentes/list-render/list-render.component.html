@@ -1,9 +1,9 @@
 <div class="aula">
     <p>list-render works!</p>
-    <h2>Animais:</h2>
+    <h2>Animais: <a routerLink="two-way-biding">+</a></h2>
     <ul>
         <li *ngFor="let animal of animais">
-            Nome: {{animal.nome}} - Tipo: {{animal.tipo}}
+            <a routerLink="/list/{{animal.id}}">Nome: {{animal.nome}}</a> - Tipo: {{animal.tipo}}
             <button (click)="mostraIdade(animal)">Idade</button>
             <button (click)="removeAnimal(animal)">Excluir</button>
         </li>
