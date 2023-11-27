@@ -17,7 +17,7 @@ export class ListRenderComponent {
   ];
   idadeAnimal: string='';
 
-  constructor (private listService: ListService) { }
+  constructor(private listService: ListService) { }
 
   ngOnInit(): void {}
 
@@ -29,5 +29,4 @@ export class ListRenderComponent {
     console.log('Removendo animal...')
     this.animais = this.listService.remove(this.animais,animal)
   }
-
 }

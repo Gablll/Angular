@@ -31,8 +31,8 @@ import { TwoWayBidingComponent } from './componentes/two-way-biding/two-way-bidi
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
-    //FormsModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
