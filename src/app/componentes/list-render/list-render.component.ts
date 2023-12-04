@@ -36,6 +36,6 @@ export class ListRenderComponent {
     this.listService.remove(animal.id).subscribe();
   }
   getAnimais() {
-    this.listService.getAll().subscribe((animais) => (this.animais = animais);
+    this.listService.getAll().subscribe((animais) => (this.animais = animais))
   }
 }
